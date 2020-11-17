@@ -19,7 +19,7 @@ public class Fibonacci {
         int compValue1 = 0;
         int compValue2 = 1;
         addedValue = 1;
-        //addedValue = compValue1 + compValue2;
+        
         
         Scanner scan = new Scanner(System.in);
         userValue = scan.nextInt();
@@ -29,13 +29,11 @@ public class Fibonacci {
         for (int i = 0; i < j; i++)
         {
             addedValue = compValue1 + compValue2;  //1+1 = 2
-            System.out.println("IN:" + compValue1 + " + " + compValue2);
-            System.out.println("OUT:" + addedValue);
+            //System.out.println("IN:" + compValue1 + " + " + compValue2);
+            //System.out.println("OUT:" + addedValue);
             compValue1 = compValue2;
             
             compValue2 = addedValue;
-           
-            
         }
         
         System.out.println(addedValue);
